@@ -5,12 +5,16 @@ import { Link, useNavigate } from "react-router-dom"
 // import Assets
 import icon from '../Assets/icon.png'
 import capa_Dashboard from '../Assets/dash.png'
+import github_ico from '../Assets/github.png'
+import linkedin_ico from '../Assets/linkedin.png'
+import figma_ico from '../Assets/figma.png'
 
 function clickMe() {
     document.getElementById("projects").scrollIntoView({
         behavior: 'smooth'
     });
 }
+
 
 function App() {
 
@@ -20,24 +24,38 @@ function App() {
         <div className="App">
             <header>
                 <div className='email'>
-                    <div className='ball_btn'>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <g clip-path="url(#clip0_6_12)">
-                                <path d="M22 4H2.01L2 20H22V4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_6_12">
-                                    <rect width="24" height="24" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
+                    <a href="mailto:eusouderickizidro@gmail.com?CC=Olá,vimos seu portfólio...">
+                        <div className='ball_btn'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g clip-path="url(#clip0_6_12)">
+                                    <path d="M22 4H2.01L2 20H22V4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_12">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </a>
                     <p className='small'> eusouderickizidro@gmail.com </p>
                 </div>
                 <div className='socials'>
-                    <div className='ball_btn'></div>
-                    <div className='ball_btn'></div>
-                    <div className='ball_btn'></div>
+                    <a href="https://github.com/DerickIzidro/" target="_blank">
+                        <button className='social_btn'>
+                            <img className='social_ico' src={github_ico} />
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/derick-izidro-3536ab264/" target="_blank">
+                        <button className='social_btn'>
+                            <img className='social_ico' src={linkedin_ico} />
+                        </button>
+                    </a>
+                    <a href="https://www.figma.com/file/zjiRvCoWbMugCvZ1svdcAj/Portfolio?type=design&t=Vaq1qI9ki8DhesAm-1" target="_blank">
+                        <button className='social_btn'>
+                            <img className='social_ico' src={figma_ico} />
+                        </button>
+                    </a>
                 </div>
             </header>
 
@@ -126,7 +144,7 @@ function App() {
             </section>
 
             <footer>
-
+                {/* <div> Ícones feitos por <a href="https://www.flaticon.com/br/autores/pixel-perfect" title="Pixel perfect"> Pixel perfect </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div> */}
             </footer>
         </div>
     );
